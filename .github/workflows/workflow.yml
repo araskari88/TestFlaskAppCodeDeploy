@@ -32,8 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
     env:
-      APPLICATION_NAME: Test-Application
-      APP_DEPLOYMENT_GROUP_NAME: Test-App-DG
+      APPLICATION_NAME: Test-Application-Private
+      APP_DEPLOYMENT_GROUP_NAME: Test-App-Private-DG
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Configure AWS credentials
